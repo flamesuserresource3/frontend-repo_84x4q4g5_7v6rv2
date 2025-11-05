@@ -1,4 +1,5 @@
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import Spline from "@splinetool/react-spline";
 
 export default function Hero() {
   return (
@@ -12,7 +13,7 @@ export default function Hero() {
               Keamanan & Kepatuhan Terjaga
             </div>
             <h1 className="mt-4 text-3xl sm:text-5xl font-bold tracking-tight text-slate-900">
-              Sistem Izin Membawa Barang yang cepat, aman, dan terdokumentasi
+              Aplikasi Izin Membawa Barang untuk proses yang cepat, aman, dan terdokumentasi
             </h1>
             <p className="mt-4 text-slate-600 text-base sm:text-lg">
               Ajukan izin, lakukan approval, cetak dengan QR, dan verifikasi di lapangan. Semua
@@ -28,25 +29,23 @@ export default function Hero() {
               </a>
             </div>
           </div>
+
           <div className="relative">
-            <div className="aspect-[4/3] w-full rounded-xl border bg-white shadow-sm p-4">
-              <div className="grid grid-cols-2 gap-3 h-full">
-                <div className="rounded-lg bg-indigo-50 border border-indigo-100 p-4 flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-indigo-900">Approval Cepat</p>
-                  <p className="text-xs text-indigo-700 mt-1">Supervisor menyetujui/menolak secara real-time.</p>
-                </div>
-                <div className="rounded-lg bg-emerald-50 border border-emerald-100 p-4 flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-emerald-900">Verifikasi QR</p>
-                  <p className="text-xs text-emerald-700 mt-1">Security memindai QR untuk validasi izin.</p>
-                </div>
-                <div className="rounded-lg bg-amber-50 border border-amber-100 p-4 flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-amber-900">Audit Trail</p>
-                  <p className="text-xs text-amber-700 mt-1">Semua aktivitas login & approval terekam.</p>
-                </div>
-                <div className="rounded-lg bg-sky-50 border border-sky-100 p-4 flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-sky-900">Cetak Surat</p>
-                  <p className="text-xs text-sky-700 mt-1">Surat izin siap cetak dengan QR unik.</p>
-                </div>
+            <div className="aspect-[4/3] w-full rounded-xl border bg-white shadow-sm overflow-hidden">
+              <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-white/30 to-transparent" />
+              <Spline
+                scene="https://prod.spline.design/4HIlOdlXYYkZW66z/scene.splinecode"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="rounded-lg bg-indigo-50 border border-indigo-100 p-4 flex flex-col justify-center">
+                <p className="text-sm font-semibold text-indigo-900">Approval Cepat</p>
+                <p className="text-xs text-indigo-700 mt-1">Supervisor menyetujui/menolak secara real-time.</p>
+              </div>
+              <div className="rounded-lg bg-emerald-50 border border-emerald-100 p-4 flex flex-col justify-center">
+                <p className="text-sm font-semibold text-emerald-900">Verifikasi QR</p>
+                <p className="text-xs text-emerald-700 mt-1">Security memindai QR untuk validasi izin.</p>
               </div>
             </div>
           </div>
